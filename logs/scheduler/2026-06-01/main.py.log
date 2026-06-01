@@ -3712,3 +3712,12 @@ airflow.exceptions.AirflowException: missing keyword argument 'trigger_dag_id'
 [2026-06-01T14:14:53.254+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:14:53.254+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-06-01 12:00:00+00:00, run_after=2026-06-02 12:00:00+00:00
 [2026-06-01T14:14:53.256+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:14:53.256+0000] {dag.py:3954} INFO - Setting next_dagrun for update_db to None, run_after=None
 [2026-06-01T14:14:53.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.162 seconds
+[2026-06-01T14:15:23.567+0000] {processor.py:161} INFO - Started process (PID=2347) to work on /opt/airflow/dags/main.py
+[2026-06-01T14:15:23.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2026-06-01T14:15:23.569+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:15:23.568+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2026-06-01T14:15:23.636+0000] {processor.py:840} INFO - DAG(s) 'produce_json', 'update_db', 'data_quality' retrieved from /opt/airflow/dags/main.py
+[2026-06-01T14:15:23.655+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:15:23.655+0000] {dag.py:3096} INFO - Sync 3 DAGs
+[2026-06-01T14:15:23.668+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:15:23.668+0000] {dag.py:3954} INFO - Setting next_dagrun for data_quality to None, run_after=None
+[2026-06-01T14:15:23.673+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:15:23.673+0000] {dag.py:3954} INFO - Setting next_dagrun for produce_json to 2026-06-01 12:00:00+00:00, run_after=2026-06-02 12:00:00+00:00
+[2026-06-01T14:15:23.674+0000] {logging_mixin.py:188} INFO - [2026-06-01T14:15:23.674+0000] {dag.py:3954} INFO - Setting next_dagrun for update_db to None, run_after=None
+[2026-06-01T14:15:23.686+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/main.py took 0.123 seconds
